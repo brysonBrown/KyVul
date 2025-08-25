@@ -79,7 +79,6 @@ def get_chatgpt_response(prompt):
 #--------------------------------------------------------------#
 
 file_name = 'data.json'
-file2_name = 'nonVulnData.json'
 # Check if the file exists
 if not os.path.isfile(file_name):
     # If not, create it and write an empty JSON array

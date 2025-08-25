@@ -41,7 +41,7 @@ for file in nonvuln_files:
     except FileNotFoundError:
         print(f"File not found: {file}")
 
-# Write the combined data to vuln.json
+# Write the combined data to nonvuln.json
 with open("/home/bryson/research/research3.0/nonvuln.json", 'w') as f:
     json.dump(combined_data, f, indent=4)  # Use indent=4 for readability
 

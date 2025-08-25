@@ -64,7 +64,7 @@ KyVul/
 │   └── CODE_CREATION_README
 │   └── CLEAN_README
 │
-├── Code Creation/        # vulnDataCreator.py + nvDataCreator.py
+├── Code Creation/        # Code Creation Files
 │
 ├── Code Cleaners/        # Preprocessing utilities
 ```
@@ -131,6 +131,34 @@ These results demonstrate that **KyVul significantly improves vulnerability dete
 
 ---
 
+## 📑 Reproducing Results with Testing Script
+
+The above results were obtained using the **KyVul\_Testing\_Script.ipynb** notebook. This requires the following imports:
+
+```python
+import torch
+import random
+import numpy as np
+import pandas as pd
+from sklearn.metrics import accuracy_score, precision_recall_curve, roc_curve, auc, precision_recall_fscore_support
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer, EarlyStoppingCallback
+import json
+import matplotlib.pyplot as plt
+import os
+```
+
+Before running, update these variables inside the script:
+
+* `output_dir` → path to store the fine-tuned model.
+* `plot_folder` → path where plots will be saved.
+
+The workflow is:
+
+1. Run the **first notebook cell group** to fine-tune and test the models.
+2. Run the **second notebook cell group** with the saved fine-tuned models to re-test and obtain higher-precision significant figures.
+
+---
+
 ## 🔬 Applications
 
 * Training LLMs for **vulnerability detection & repair**
@@ -162,7 +190,5 @@ A quick look at a vulnerable → fixed pair:
   "vulnerable": 0
 }
 ```
-
-
 
 🔥 With **20K high-quality paired samples**, **KyVul** is your go-to dataset for **secure AI coding research**.
