@@ -1,6 +1,6 @@
 # KyVul: A Balanced C/C++ Vulnerability Dataset
 
-🚀 **Welcome to KyVul** — the first large-scale, balanced dataset of C/C++ vulnerabilities created by an LLM, designed for training, evaluating, and benchmarking Large Language Models (LLMs), static analyzers, and program analysis tools in software security.
+**Welcome to KyVul** — the first large-scale, balanced dataset of C/C++ vulnerabilities created by an LLM, designed for training, evaluating, and benchmarking Large Language Models (LLMs), static analyzers, and program analysis tools in software security.
 
 ---
 
